@@ -335,7 +335,7 @@
 		</div>
 	</div>
 
-	<!--<div id="fh5co-consult">
+	<div id="fh5co-consult">
 		<div class="choose animate-box" onsubmit="sendEmail(event)">
 			<h2>Contact</h2>
 			<form action="#">
@@ -347,12 +347,6 @@
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
 					</div>
 				</div>
 
@@ -372,7 +366,7 @@
 				</div>
 
 			</form>	
-		</div>-->
+		</div>
 	</div>
 
 	<div class="gototop js-top">
@@ -402,6 +396,14 @@
 			duration: 1000, // Animation duration in milliseconds
 			once: true, // Only animate once per scroll
 		});
+		function sendEmail(event) {
+			event.preventDefault();
+			const fname = document.getElementById("fname").value;
+    		const lname = document.getElementById("lname").value;
+    		const subject = document.getElementById("subject").value;
+    		const message = document.getElementById("message").value;
+            window.location.href = `mailto:nvp9866@gmail.com?subject=${subject}&body=Hi I am ${fname} ${lname}, Here is my message: ${message}`;
+        }
 	</script>
 	
 
