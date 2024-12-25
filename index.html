@@ -335,7 +335,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
+	<!--<div id="fh5co-consult">
 		<div class="choose animate-box" onsubmit="sendEmail(event)">
 			<h2>Contact</h2>
 			<form action="#">
@@ -372,7 +372,7 @@
 				</div>
 
 			</form>	
-		</div>
+		</div>-->
 	</div>
 
 	<div class="gototop js-top">
@@ -402,34 +402,6 @@
 			duration: 1000, // Animation duration in milliseconds
 			once: true, // Only animate once per scroll
 		});
-		emailjs.init({
-        	publicKey: "TOEdqeX8MFy1jscxZ",
-      	});
-		function sendEmail(event) {
-			event.preventDefault()
-			const fname = document.getElementById("fname").value;
-    		const lname = document.getElementById("lname").value;
-    		const email = document.getElementById("email").value;
-    		const subject = document.getElementById("subject").value;
-    		const message = document.getElementById("message").value;
-
-    		// Create email data object
-    		const templateParams = {
-        		from_name: `${fname} ${lname}`,
-        		from_email: email,
-        		subject: subject,
-        		message: message,
-    		};
-
-    		// Send email using EmailJS
-    		emailjs.send("service_zyq6dom", "template_h9o4z48", templateParams)
-        		.then(function(response) {
-            	alert("Email sent successfully!");
-        	}, function(error) {
-            	alert("Failed to send email. Please try again.");
-            	console.error("EmailJS Error: ", error);
-        	});
-		}
 	</script>
 	
 
