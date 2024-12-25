@@ -1,1 +1,1 @@
-This is portfolio website
+This is portfolio website buit using HTML, CSS and JS
