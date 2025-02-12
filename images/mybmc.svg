@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+    <!-- Background white rectangle for clarity -->
+    <rect width="400" height="200" fill="white"/>
+    
+    <!-- Medical Cross Symbol -->
+    <g transform="translate(50, 65)">
+        <!-- Circular border -->
+        <circle cx="35" cy="35" r="35" fill="#DC2626"/>
+        <!-- Cross -->
+        <rect x="25" y="15" width="20" height="40" rx="5" fill="white"/>
+        <rect x="15" y="25" width="40" height="20" rx="5" fill="white"/>
+    </g>
+    
+    <!-- Large Stethoscope -->
+    <g transform="translate(20, 40)">
+        <!-- Ear pieces -->
+        <path d="M70,20 C80,20 90,25 90,35" stroke="#B91C1C" stroke-width="3" fill="none"/>
+        <path d="M110,20 C100,20 90,25 90,35" stroke="#B91C1C" stroke-width="3" fill="none"/>
+        <!-- Tubing -->
+        <path d="M90,35 C90,45 90,55 100,65 C110,75 110,85 100,95" 
+              stroke="#B91C1C" stroke-width="3" fill="none"/>
+        <!-- Diaphragm -->
+        <circle cx="100" cy="95" r="8" fill="#DC2626"/>
+        <circle cx="100" cy="95" r="6" fill="#B91C1C"/>
+    </g>
+    
+    <!-- Calendar Icon -->
+    <g transform="translate(30, 50)">
+        <!-- Calendar base -->
+        <rect x="60" y="15" width="40" height="40" rx="5" fill="#B91C1C"/>
+        <!-- Calendar top -->
+        <rect x="65" y="10" width="30" height="10" rx="2" fill="#B91C1C"/>
+        <!-- Calendar lines -->
+        <line x1="70" y1="30" x2="90" y2="30" stroke="white" stroke-width="2"/>
+        <line x1="70" y1="40" x2="90" y2="40" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Text elements -->
+    <g transform="translate(130, 80)">
+        <text font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#111827">
+            <tspan x="0" y="0">Book My</tspan>
+            <tspan x="0" y="35" fill="#DC2626">Consultation</tspan>
+        </text>
+    </g>
+    
+    <!-- Small decorative stethoscope near text -->
+    <g transform="translate(320, 60)">
+        <path d="M30,40 C40,40 40,20 30,20 C20,20 20,40 30,40" fill="none" stroke="#DC2626" stroke-width="2"/>
+        <circle cx="30" cy="45" r="4" fill="#DC2626"/>
+    </g>
+</svg>

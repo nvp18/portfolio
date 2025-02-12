@@ -119,6 +119,18 @@
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Work Experience</h3></div>
 						</li>
+						<li class="animate-box timeline-inverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Teaching Assistant</h3>
+									<span class="company">University of Maryland CMNS Department - Aug 2024 - Current</span>
+								</div>
+								<div class="timeline-body">
+									<p>As a Teaching Assistant, I mentored 40+ students in Data Science and Data Structures & Algorithms courses, simplifying complex data structures and ML algorithms. I provided guidance on problem-solving techniques, helping students improve their understanding and application of key concepts.</p>
+								</div>
+							</div>
+						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
@@ -127,7 +139,7 @@
 									<span class="company">University of Maryland - Sep 2023 - Apr 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>As a Software Developer at the University of Maryland, I built an inventory management system for dining services department with React, Spring Boot, and Redux, featuring stock management, analytics, and role-based access control using Spring Security and JWT.</p>
+									<p>As a Software Developer, I designed and developed a responsive frontend UI for an Inventory Management System using React, Redux, and Material-UI, improving data management efficiency by 30%. I implemented key features like a date range selector, dynamic forms, and Excel import/export, enhancing search efficiency by 40% and reducing manual data entry time by 50%.</p>
 								</div>
 							</div>
 						</li>
@@ -135,11 +147,11 @@
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Specialist Programmer</h3>
+									<h3 class="timeline-title">Java Developer</h3>
 									<span class="company">Infosys - Jan 2022 - Jul 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>As a Specialist Programmer at Infosys, I worked with PayPal and BNSF, developing services using Java, Spring Boot, and React. I implemented features like automated batch processes, date-range record viewing, and employee leave tracking. Additionally, I performed functional, end-to-end, and integration testing to ensure service reliability and functionality.</p>
+									<p>As a Java Developer, I designed and developed REST APIs using Java and Spring Boot for clients like PayPal and BNSF, optimizing data retrieval and insertion processes, reducing processing time by 30%. I implemented a ThreadPoolExecutor for concurrent processing, improved large payload handling with Jackson, and automated backend processes for real-time customer dashboard updates with 99% data accuracy. Additionally, I ensured code reliability with 95% test coverage using JUnit, Mockito, and TestNG.</p>
 								</div>
 							</div>
 						</li>
@@ -168,7 +180,7 @@
 									<span class="company">University of Maryland, College Park - Aug 2023 - May 2025</span>
 								</div>
 								<div class="timeline-body">
-									<p>Currently pursuing Master’s in Software Engineering, graduating in May 2025, with coursework in Cloud Security, Software Engineering, Software Design and Implementation, Software Testing, and Data Science.</p>
+									<p>Currently pursuing Master’s in Software Engineering, graduating in May 2025, with coursework in Cloud Security, Software Engineering, Software Design and Implementation, Software Testing, and Data Science. GPA: 3.88/4</p>
 								</div>
 							</div>
 						</li>
@@ -180,7 +192,7 @@
 									<span class="company">Gitam University - Jun 2016 - Jun 2020</span>
 								</div>
 								<div class="timeline-body">
-									<p>I completed my bachelor’s degree in Computer Science, with coursework in Operating Systems, Object-Oriented Programming with Java and Python, Data Structures and Algorithms, Machine Learning, and Cloud Computing.</p>
+									<p>I completed my bachelor’s degree in Computer Science, with coursework in Operating Systems, Object-Oriented Programming with Java and Python, Data Structures and Algorithms, Machine Learning, and Cloud Computing. GPA: 8.61/10</p>
 								</div>
 							</div>
 						</li>
@@ -335,39 +347,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
-		<div class="choose animate-box" onsubmit="sendEmail(event)">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write your message here"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
+	
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -396,14 +376,6 @@
 			duration: 1000, // Animation duration in milliseconds
 			once: true, // Only animate once per scroll
 		});
-		function sendEmail(event) {
-			event.preventDefault();
-			const fname = document.getElementById("fname").value;
-    		const lname = document.getElementById("lname").value;
-    		const subject = document.getElementById("subject").value;
-    		const message = document.getElementById("message").value;
-            window.location.href = `mailto:nvp9866@gmail.com?subject=${subject}&body=Hi I am ${fname} ${lname}, Here is my message: ${message}`;
-        }
 	</script>
 	
 
